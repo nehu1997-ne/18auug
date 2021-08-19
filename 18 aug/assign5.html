@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="container"></div>
+
+    <button onclick="AddAbbr ()">Create a new abbreviation</button> -->
+</body>
+<script>
+    abbr = function (str1) {
+    var split_names = str1.trim().split(" ");
+    if (split_names.length > 1) {
+        return (split_names[0] + " " + split_names[1].charAt(0) + ".");
+    }
+    return split_names[0];
+};
+document.write(abbr("Neha singh Rajput"));
+// function AddAbbr () {
+//             var abbr = document.createElement ("abbr");
+//             abbr.innerHTML = "R.k verma";
+//             abbr.title = "raj kumar verma";
+
+//             var container = document.getElementById ("container");
+//             container.appendChild (abbr);
+//         }
+</script>
+</html>

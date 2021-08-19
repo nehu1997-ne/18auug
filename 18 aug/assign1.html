@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>assign 1</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+
+
+// function checkPalindrome(str) {
+
+
+// var len = string.length;
+
+
+// for (let i = 0; i < len / 2; i++) {
+
+
+//     if (string[i] !== string[len - 1 - i]) {
+//         return 'It is not a palindrome';
+//     }
+// }
+// return 'It is a palindrome';
+// }
+
+
+// var string = prompt('Enter a string: ');
+
+
+// var value = checkPalindrome(string);
+
+// document.write(value);
+
+
+
+function checkPalindrome(str) {
+
+
+const arrayValues = string.split('');
+
+
+const reverseArrayValues = arrayValues.reverse();
+
+
+const reverseString = reverseArrayValues.join('');
+
+if(string == reverseString) {
+    document.write('It is a palindrome');
+}
+else {
+    document.write('It is not a palindrome');
+}
+}
+
+
+const string = prompt('Enter a string: ');
+
+checkPalindrome(string);
+    </script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assign 2</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+// function countString(str, letter) {
+
+  
+//     const aa = new RegExp(letter, 'g');
+
+
+//     const count = str.match(aa).length;
+
+//     return count;
+// }
+
+
+// const string = prompt('Enter a string: ');
+// const letterToCheck = prompt('Enter a letter to check: ');
+
+// const result = countString(string, letterToCheck);
+
+// document.write(result);
+
+// program to check the number of occurrence of a character
+
+function countString(str, letter) {
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+
+   
+        if (str.charAt(i) == letter) {
+            count += 1;
+        }
+    }
+    return count;
+}
+
+
+const string = prompt('Enter a string: ');
+const letterToCheck = prompt('Enter a letter to check: ');
+
+const result = countString(string, letterToCheck);
+
+document.write(result);
+</script>
+</html>
